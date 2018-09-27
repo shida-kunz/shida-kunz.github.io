@@ -1,35 +1,206 @@
 <!DOCTYPE html>
 <html>
-<title>Coming Soon</title>
+<title>Shida Kunz</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-    background-image: url('./forestbridge.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+p{
+  text-align: justify;
+}
+ul{
+  text-align: justify;
+}
+ol{
+  text-align: justify;
 }
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <!-- Logo -->
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">60 days left !</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">SHIDA KUNZ</a>
+    <a href="#background" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#research" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+    <a href="#publication" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   </div>
 </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#background">About</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#research">Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#publication">Publication</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#contact">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h1 id="bio" class="w3-text-blue-gray">Short Bio</h1>
+      <p>Currently, I am a member of the Scientific Staff at Schloss Dagstuhl – Leibniz Center for Informatics. As a
+        researcher, I am also associated with Max-Planck Institute for Informatics.
+
+        Previously I was a Senior Research Scientist at the Chair for Computer Graphics and Multimedia Systems of the
+        University of Siegen, Germany. And before that I held a position as an associated professor at the Faculty of
+        Computer Science and Media Technology in Gjovik University College (Høgskolen i Gjøvik- now Norwegian University
+        of Science and Technology) and a member of the Norwegian Colour and Visual Computing Laboratory.
+
+        In 2013, I've received my PhD title at the Computer Vision Center (CVC) of the Universitat Autònoma de Barcelona
+        (UAB), Barcelona, Spain. Before that, I've obtained my master degree in Artificial Intelligence and Computer Vision in 2008 from UAB.
+
+        Specialties: Computer Vision and Pattern Recognition, Inverse Rendering, Light field, Color Vision,
+        Time-of-Flight, Computational Photography, Multimodal Imaging and Sensor Fusion, Psychophysics and Perception.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-small w3-padding-16 w3-center"><img src="a1287cc9_small.jpg" style="width: 200px"/></p>
+      <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>-->
+    </div>
+  </div>
+
+  <div class="indent"><div class="indent"><div class="indent"><h3></h3>
+
+  <div id="background" class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-blue-gray">Background</h1>
+      <ul>
+        <li>Since&nbsp;2018 Member of the <b>Scientific Staff<br /></b>Schloss Dagstuhl – Leibniz-Zentrum für Informatik</li>
+        <li>April 2018 <b>Invited Lecturer<br /></b>COSI ( Colour in Science &amp; Technology ), Erasmus masters program, Universidad de Granada, Spain</li>
+        <li>2016-2017&nbsp;<b>Lise Meitner Award Fellow</b><br />Max-Planck Institute for Informatics,&nbsp;Saarbrücken, Germany</li>
+        <li>2014-2016&nbsp;<b>Senior Research Scientist</b><br />Chair for Computer Graphics and Multimedia Systems, University of Siegen, Germany</li>
+        <li>2013-2014<b>&nbsp;Associate Professor</b><br />Norwegian Colour and Visual Computing Laboratory, Faculty of Computer Science and Media Technology, Gjovik University College (Høgskolen i Gjøvik) - now Norwegian University of Science and Technology (NTNU), Norway</li>
+        <li>2013&nbsp;<b>Doctoral Degree</b>&nbsp;(Ph.D.), with honors<br />&nbsp;Ph.D. with honors in Computer Vision, Computer Vision Center (CVC), Universitat Autònoma de Barcelona, Bellaterra, Spain</li>
+        <li>2011 <b>Visiting Researcher</b><br />Pattern Recognition Lab , Friedrich-Alexander University Erlangen- Nuremberg, Germany</li>
+        <li>2008-2013:<b>&nbsp;Graduate Research Assistent&nbsp;</b><br />Computer Vision Center (CVC), Technical School of Engineering (ETSE), Universitat Autònoma de Barcelona, Bellaterra, Spain</li><li>2009&nbsp;<b>Masters Degree</b><br />Master of science in Artificial Intelligence and Computer Vision, Universitat Autònoma de Barcelona, Bellaterra, Spain</li>
+        <li>2003-2007&nbsp;<b>Bachelor Degree</b>, with honors<br />Bachelor of engineering in Software Engineering&nbsp;</li>
+      </ul>
+
+    </div>
+    <div class="w3-third w3-container">
+      <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>-->
+    </div>
+  </div>
+
+
+  <div id="research" class="w3-row w3-padding-32">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-blue-gray">Research and scientific&nbsp;work</h1>
+        <ul><li><a href="https://people.mpi-inf.mpg.de/~beigpour/">see Homepage</link></li></ul>
+      </div>
+      <div class="w3-third w3-container">
+        <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>-->
+      </div>
+  </div>
+
+  <div id="publication" class="w3-row w3-padding-32">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-blue-gray">Publications</h1>
+        <ul><li><a href="https://dblp.org/pid/57/10637">see dblp</link></li></ul>
+      </div>
+      <div class="w3-third w3-container">
+        <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>-->
+      </div>
+   </div>
+
+
+   <div class="w3-row w3-padding-32">
+      <div class="w3-twothird w3-container">
+        <h1 id="contact" class="w3-text-blue-gray">Contact</h1>
+        <h3>E-mail</h3>
+        kunz (at) dagstuhl (dot) de
+        </br>
+        </br>
+        <h3>Address</h3>
+        <p>
+          Schloss Dagstuhl<br />
+          Universität des Saarlandes<br />
+          Campus E1 1<br />
+          66123 Saarbrücken<br />
+          Germany
+        </p>
+      </div>
+      <div class="w3-third w3-container">
+        <!--<p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>-->
+      </div>
+    </div>
+
+
+  <!-- Pagination -->
+<!--  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>-->
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-20">
+      <h4>SHIDA KUNZ</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
 
 </body>
 </html>
